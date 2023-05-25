@@ -17,22 +17,46 @@
   }
   
   /* The about link: 20px from the top with a green background */
+  #home{
+    top:70px;
+    background-color:chocolate;
+  }
   #about {
-    top: 70px;
+    top: 160px;
     background-color: #04AA6D;
   }
   
   #weather {
-    top: 160px;
+    top: 250px;
     background-color: #2196F3; /* Blue */
   }
   
   #request_line {
-    top: 250px;
+    top: 340px;
     background-color: #f44336; /* Red */
   }
   
   #contact {
-    top: 340px;
+    top: 430px;
     background-color: #555 /* Light Black */
+  }
+  h1{
+    position:absolute;
+    left:100px;
+  }
+  #subtitle{
+    padding-top:60px;
+  }
+  p{
+    padding-left:100px;
+  }
+  fieldset{
+    position:absolute;
+    left:100px;
+    top:100px;
+    width:310px;
+  }
+  .request{
+    position:absolute;
+    left:150px;
   }
