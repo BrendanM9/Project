@@ -40,12 +40,12 @@
   
   #request_line {
     top: 340px;
-    background-color: #f44336; /* Red */
+    background-color: #FFF225; /* Red */
   }
   
   #contact {
     top: 430px;
-    background-color: #555 /* Light Black */
+    background-color: #F89A21 /* Light Black */
   }
   h1{
     position:absolute;
