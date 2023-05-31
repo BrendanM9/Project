@@ -7,71 +7,81 @@
     Carrot Orange (F89A21)
 */
 #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    height:50px;
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
-  
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
-  }
-  
-  /* The about link: 20px from the top with a green background */
-  #home{
-    top:70px;
-    background-color:#373E99;
-  }
-  #about {
-    top: 160px;
-    background-color: #E8E9EB;
-  }
-  
-  #weather {
-    top: 250px;
-    background-color: #0D160B; /* Blue */
-  }
-  
-  #request_line {
-    top: 340px;
-    background-color: #FFF225; /* Red */
-  }
-  
-  #contact {
-    top: 430px;
-    background-color: #F89A21 /* Light Black */
-  }
-  h1{
-    position:absolute;
-    left:100px;
-  }
-  #subtitle{
-    padding-top:60px;
-  }
-  p{
-    padding-left:100px;
-  }
-  fieldset{
-    position:absolute;
-    left:100px;
-    top:100px;
-    width:310px;
-  }
-  .request{
-    position:absolute;
-    left:150px;
-  }
-  .contact{
-    position:absolute;
-    left:150px;
-  }
-  .comment{
-    position:absolute;
-    left:150px;
-  }
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  height:50px;
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#home{
+  top:70px;
+  background-color:#373E99;
+}
+#about {
+  top: 160px;
+  background-color: #E8E9EB;
+}
+
+#weather {
+  top: 250px;
+  background-color: #0D160B; /* Blue */
+}
+
+#request_line {
+  top: 340px;
+  background-color: #FFF225; /* Red */
+}
+
+#contact {
+  top: 430px;
+  background-color: #F89A21 /* Light Black */
+}
+h1{
+  position:absolute;
+  left:100px;
+}
+#subtitle{
+  padding-top:60px;
+}
+p{
+  padding-left:100px;
+}
+.request_form{
+  position:absolute;
+  left:100px;
+  top:100px;
+  width:310px;
+}
+.request{
+  position:absolute;
+  left:150px;
+}
+.contact{
+  position:absolute;
+  left:150px;
+  width:300px;
+}
+.comment{
+  position:absolute;
+  left:150px;
+  height:150px;
+  width:300px;
+}
+#contact_form{
+  position:absolute;
+  left:100px;
+  top:100px;
+  width:450px;
+  height:325px;
+}
