@@ -1,4 +1,11 @@
 /* Style the links inside the sidenav */
+/* THEME:
+    Marian Blue (373E99)
+    Anti-Flash White (E8E9EB)
+    Night (0D160B)
+    Aureolin (FFF225)
+    Carrot Orange (F89A21)
+*/
 #mySidenav a {
     position: absolute; /* Position them relative to the browser window */
     left: -80px; /* Position them outside of the screen */
@@ -19,7 +26,7 @@
   /* The about link: 20px from the top with a green background */
   #home{
     top:70px;
-    background-color:chocolate;
+    background-color:373E99;
   }
   #about {
     top: 160px;
