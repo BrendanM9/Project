@@ -26,11 +26,11 @@
   /* The about link: 20px from the top with a green background */
   #home{
     top:70px;
-    background-color:373E99;
+    background-color:#373E99;
   }
   #about {
     top: 160px;
-    background-color: #04AA6D;
+    background-color: #E8E9EB;
   }
   
   #weather {
