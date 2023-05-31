@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock & Roll's Greatest Hits</title>
+        <link rel="stylesheet" href="radio.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <h1>Welcome to KQAK-FM Online Player</h1>
+        <br>
+        <br>
+        <h3 id="subtitle">We play all of your favorite songs from the 70's, 80's, & 90's.</h3>
+        <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				ajaxurl ="https://www.kqak.com/wp-admin/admin-ajax.php";
+				var data = {
+					'action': 'load_player_banner_callback',
+					'banner_template': "/mnt/wpcode/wp-content/themes/hello-theme-child-master/inc/audio-player/bottom-player-banner-ad.php",
+					'device_type': "mobile_tablet",
+				};
+				console.log("data::::", data);
+				jQuery.ajax({
+					type: 'POST',
+					url: ajaxurl,            
+					data: data
+				}).done(function(data){
+					$("#audio-stream-player-on-top-ad").html(data);
+				});
+			});
+	  </script>
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            ajaxurl ="https://www.kqak.com/wp-admin/admin-ajax.php";
+            var data = {
+                'action': 'load_player_banner_callback',
+                'banner_template': "/mnt/wpcode/wp-content/themes/hello-theme-child-master/inc/audio-player/bottom-player-banner-ad.php",
+                'device_type': "desktop",
+            };
+            console.log("data::::", data);
+            jQuery.ajax({
+                type: 'POST',
+                url: ajaxurl,            
+                data: data
+            }).done(function(data){
+                $("#player-content-colum-left").html(data);
+            });
+        });
+  </script>
+  <div id="audio-stream-player-on-top-ad"></div>
+  <div class="audio-stream-player template-theme fixed-bar bottom-player fixed-bar-audio-stream large" aria-label="Bottom audio player">
+    <div class="player-content player-content-audio-stream">
+        <div id="player-content-colum-left">    <div class="player-banner-ad" aria-label="Advertisement"><aside id="widget-adv-location-12" class="widget widget-aside-widget_adv_location flyout-item"><div class="adv-banner" data-id="67816" location-id="51"><a href="https://www.kqak.com?bannerclick=67816&amp;locationId=51/" target="_blank" rel="noopener"><img src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1950/2022/10/06182018/KQAKDigitalAds1022-320x503-1.jpg" width="320" height="50" alt="KQAKDigitalAds1022-320x503"></a></div></aside></div>
+</div>
+        <div id="player-content-colum-center">
+            
+<div class="controls-meta-wrapper">
+    <div class="play-meta-center-wrapper">
+        <div class="controls controls-audio-stream" aria-label="Radio controls press shift and enter to play">
+            <div class="amplitude-play-pause play-pause amplitude-paused" id="play-pause" aria-label="Play and stop" tabindex="1">
+
+                                    <svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon pause a-play audio-player-close-flyout player-control-icon-svg">
+                        <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm96-280v160c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16zm-112 0v160c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16z"></path>
+                    </svg>
+
+                                <svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon play a-pause audio-player-open-flyout player-control-icon-svg">
+                    <path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="player meta-wrapper song-info song-info-audio-stream" aria-label="Song Information">
+            <div class="cover-art" aria-label="Station Image" tabindex="2">
+                <img id="amplitude-cover-art-url" class="media-object station-logo" data-amplitude-song-info="cover_art_url" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1950/2022/10/03102814/KQAK-Logo06-ColorCS2-Logo.png" alt="stream_cover_art">
+            </div>
+            <div class="metadata metadata-audio-stream" aria-label="Listen live metadata" tabindex="3">
+                <!-- Song Name -->
+                <label class="station-meta-data song-name" aria-label="Listen live song name">
+                    <span id="amplitude-song-name" data-amplitude-song-info="name" class="song-name"> </span>
+                </label>
+                <!-- Artist Name-->
+                <label class="station-meta-data artist-name" aria-label="Listen live artist name">
+                    <span id="amplitude-artist" data-amplitude-song-info="artist"> </span>
+                </label>
+            </div>
+
+        </div>
+        <div class="player-status" style="display: none;">
+            <input type="hidden" id="audio-stream-player-status" value="stop">
+        </div>
+    </div>
+</div>
+        </div>
+        <div id="player-content-colum-right">
+                            <div class="audio-player-flyout-open-btn-wrapper">
+        <a href="#" class="audio-player-flyout-btn flyout-open-btn no-pjax">
+            <svg xmlns="//www.w3.org/2000/svg" class="flyout-menu-icon player-control-icon-svg" width="22.567" height="19.746" viewBox="0 0 22.567 19.746">
+  <title>Click to open player flyout</title>
+  <desc>Click to open player flyout to access more features</desc>
+    <path d="M.806,7.846H21.761a.806.806,0,0,0,.806-.806V5.025a.806.806,0,0,0-.806-.806H.806A.806.806,0,0,0,0,5.025V7.04A.806.806,0,0,0,.806,7.846Zm0,8.06H21.761a.806.806,0,0,0,.806-.806V13.084a.806.806,0,0,0-.806-.806H.806A.806.806,0,0,0,0,13.084V15.1A.806.806,0,0,0,.806,15.905Zm0,8.06H21.761a.806.806,0,0,0,.806-.806V21.144a.806.806,0,0,0-.806-.806H.806A.806.806,0,0,0,0,21.144v2.015A.806.806,0,0,0,.806,23.965Z" transform="translate(0 -4.219)"></path>
+</svg>
+
+        </a>
+    </div>
+        </div>
+    </div>
+</div>
+<div id="audio-player-flyout" class="audio-player-bottom-flyout audio-player-flyout-bg">
+    <div id="audio-player-flyout-content-wrapper">
+    <div id="audio-player-flyout-content" class="audio-player-flyout-content">
+        <section id="audio-player-flyout-section">
+            <div class="audio-player-flyout-wrapper">
+                <div class="audio-player-flyout-col flyout-left-col">
+                                                        </div>
+                <div class="audio-player-flyout-col flyout-middle-col">
+                    <aside id="widget-adv-location-15" class="widget-odd widget-last widget-first widget-1 widget widget-aside-widget_adv_location flyout-item"><!-- ***** AJAX BASED BANNER CODE START ***** -->
+<!-- start ajax banner div -->
+<div id="banner-ajax-div-77496-1" class="banner-ajax-div-class">
+	<!-- Debug : banner_id : 77498 , flag : from cache , bannerbinId : 87 , banner_title : 300×250 AM Radio Ad4 , banner_bin_name : 300x250 Banner A , banner_available : 77496,77500,77498,74506,77494 -->
+	<div class="js-reload-banner" data-instance-no="1" data-banner-id="77498" data-available-banners="77496,77500,77498,74506,77494"><div class="adv-banner" data-id="77498" location-id="87"><a href="https://www.kqak.com?bannerclick=77498&amp;locationId=87/" target="_blank" class="no-pjax"><img src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1950/2023/05/08130936/300x250__600AMStations.gif" width="300" height="250" alt="300x250__600AMStations"></a></div></div>
+</div> <!-- end ajax banner div -->
+<input type="hidden" id="banner-ajax-hidden-1" class="banner-ajax-hidden-class" value="77496#:#77496,77500,77498,74506,77494#:#1#:#300x250-banner-a#:#87#:#https://www.kqak.com/wp-content/plugins/advertise/#:#1950#:#-#:#-7#:#1#:#1#:#3c5cbc5b7e">
+<input type="hidden" id="banner-ajax-hidden-extra-1" class="banner-ajax-hidden-class-extra" value="77500,77498,77496,77494,74506,67810,67808,67806,67804,67802,67800#:#77500,77498,77496,77494,74506,67810,67808,67806,67804,67802,67800">
+<!-- ***** AJAX BASED BANNER CODE END ***** -->
+<script type="text/javascript">
+jQuery(".fa-search").click(function() {
+  var uniqueDivId = 'banner-ajax-div-77496-1';
+  setTimeout(function(){ 
+  	ITM_Banner.ITM_OneCmsBannerLoad = false; readyFn_BannerAjax(jQuery, 'popup'); 
+  }, 500);
+});
+</script>
+</aside>                </div>
+                <div class="audio-player-flyout-col flyout-right-col">
+                                    </div>
+            </div>
+                <div class="audio-player-flyout-btn-wrapper">
+        <a href="#" class="audio-player-flyout-btn no-pjax">
+            <svg xmlns="//www.w3.org/2000/svg" class="flyout-arrow player-control-icon-svg" height="24" viewBox="0 0 24 24" width="24">
+<title>Click to open player flyout</title>
+  <desc>Click to open player flyout to access more features</desc>
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M7 10l5 5 5-5z"></path>
+</svg>
+        </a>
+    </div>
+        </section>
+    </div>
+</div>
+</div>
+<div id="audio-player-station-streams-flyout" class="audio-player-station-streams-bottom-flyout audio-player-flyout-bg">
+    <!-- This block will be hidden and need to added to the page . When stream selected from new select box it trigger the old select box  which trigger the player to play the stream -->
+</div>
+<div class="player-banner-content" aria-label="Advertisement">        
+    <a id="ad-model-open" href="#audio-player-ad-modal">Open Modal</a>
+    <div id="audio-player-ad-modal" class="ad-modal-container">
+        <div class="ad-modal">
+            <div id="mainContainer">
+                <div id="content">
+                    <video id="contentElement" style="display:none;" playsinline="">
+                        <source src="//dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1149/2020/07/17154538/1-second-black-screen-video_f0689c.mp4">
+                    </video>
+                </div>
+                <div id="adContainer"></div>
+            </div>
+            <button id="resume-ad-model" type="button" style="display:none;width:100%;height:auto;padding:5px;background-color:#000000;border-style:none;">Click to Resume AD</button>
+        </div>
+    <a id="ad-model-close" href="#audio-player-ad-modal" class="ad-modal-bg"></a>
+    <a id="ad-model-close-hidden" href="#"></a>
+    </div>
+</div>
+<br>
+<br>
+        <div id="mySidenav" class="sidenav">
+            <br>
+            <br>
+            <a href="index.html" id="home">Home</a>
+            <a href="about.html" id="about">About</a>
+            <a href="weather.html" id="weather">Weather</a>
+            <a href="request.html" id="request_line">Song Request</a>
+            <a href="contact.html" id="contact">Contact</a>
+          </div>
+    </body>
+</html>
