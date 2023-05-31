@@ -7,11 +7,16 @@
     </head>
     <body>
         <h1>Central Oregon Weather</h1>
-        <h3>Keep track of your Central Oregon weather here!</h3>
-        <p id='location'></p>
+        <br>
+        <br>
+        <h3 id="subtitle">Keep track of your Central Oregon weather here!</h3>
+        <br>
+        <br>
+        <div id="weather-table">
+        <h4 id='location'></h4>
         <p id="demo"></p>
         <p id='description'></p>
-        <p id="icon"></p>
+        <i id="icon"></i>
         <p id="temp"></p>
         <p id="realFeel"></p>
         <p id="lo"></p>
@@ -20,6 +25,7 @@
         <p id="wspeed"></p>
         <p id="degrees"></p>
         <p id="cloud"></p>
+    </div>
     <script>
         const bendID = 5713587;
         const apiKey= '4652a98c9359bbc737bd4e7e8797adfc';
@@ -36,7 +42,7 @@
             document.getElementById('description').innerHTML = "Description: "+ d.weather[0].description;
             document.getElementById('icon').innerHTML = d.weather[0].icon;
             document.getElementById('temp').innerHTML = "Current Temperature: " + fahrenheit + '&deg;';
-            document.getElementById('location').innerHTML = "Location: " + d.name;
+            document.getElementById('location').innerHTML = d.name;
             document.getElementById('realFeel').innerHTML = "Real Feel: "+ heatIndexF + '&deg';
             document.getElementById('lo').innerHTML = "Minimum Temperature So Far: " +low + '&deg';
             document.getElementById('hi').innerHTML = "Maximum Temperature So Far: " +high + '&deg';
