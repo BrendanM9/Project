@@ -34,6 +34,11 @@
         const redmondID = 5747882;
         const lapineID = 5735549;
         var cityID1 = bendID;
+        var Bend = document.getElementById("bend");
+        var bendFunction=function(){
+            cityID1 = bendID;
+        }
+        Bend.addEventListener("click", bendFunction);
         var Sisters = document.getElementById("sisters");
         var sistersFunction=function(){
             cityID1 = sistersID;
