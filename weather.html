@@ -38,12 +38,16 @@
         var bendFunction=function(){
             cityID1 = bendID;
         }
-        Bend.addEventListener("click", bendFunction);
+        Bend.addEventListener("click", bendFunction());
         var Sisters = document.getElementById("sisters");
         var sistersFunction=function(){
             cityID1 = sistersID;
         }
         Sisters.addEventListener("click", sistersFunction());
+        var Prineville = document.getElementById("Prineville");
+        var prinevilleFunction=function(){
+            cityID1=prinevilleID;
+        }
         const apiKey= '4652a98c9359bbc737bd4e7e8797adfc';
         console.log("working");
         function drawWeather( d ){
