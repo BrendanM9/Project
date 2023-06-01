@@ -6,6 +6,10 @@
     Aureolin (FFF225)
     Carrot Orange (F89A21)
 */
+#Location_menu{
+    position:absolute;
+    left:100px;
+}    
 #mySidenav a {
   position: absolute; /* Position them relative to the browser window */
   left: -80px; /* Position them outside of the screen */
