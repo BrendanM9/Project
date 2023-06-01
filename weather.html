@@ -34,35 +34,6 @@
         const redmondID = 5747882;
         const lapineID = 5735549;
         var cityID1 = bendID;
-        var Bend = document.getElementById("bend");
-        var bendFunction=function(){
-            cityID1 = bendID;
-            weatherBalloon(cityID1);
-        }
-        Bend.addEventListener("click", bendFunction());
-        var Sisters = document.getElementById("sisters");
-        var sistersFunction=function(){
-            cityID1 = sistersID;
-            weatherBalloon(cityID1);
-        }
-        Sisters.addEventListener("click", sistersFunction());
-        var Prineville = document.getElementById("Prineville");
-        var prinevilleFunction=function(){
-            cityID1=prinevilleID;
-            weatherBalloon(cityID1);
-        }
-        Prineville.addEventListener("click", prinevilleFunction());
-        var Redmond = document.getElementById("redmond");
-        var redmondFunction=function(){
-            cityID1=redmondID;
-            weatherBalloon(cityID1);
-        }
-        Redmond.addEventListener("click", redmondFunction());
-        var LaPine=document.getElementById("Lapine")
-        var lapineFunction=function(){
-            cityID1=lapineID;
-            weatherBalloon(cityID1);
-        }
         const apiKey= '4652a98c9359bbc737bd4e7e8797adfc';
         console.log("working");
         function drawWeather( d ){
@@ -99,6 +70,35 @@
             });
         }
         window.onload = function() {
+            weatherBalloon(cityID1);
+        }
+        var Bend = document.getElementById("bend");
+        var bendFunction=function(){
+            cityID1 = bendID;
+            weatherBalloon(cityID1);
+        }
+        Bend.addEventListener("click", bendFunction());
+        var Sisters = document.getElementById("sisters");
+        var sistersFunction=function(){
+            cityID1 = sistersID;
+            weatherBalloon(cityID1);
+        }
+        Sisters.addEventListener("click", sistersFunction());
+        var Prineville = document.getElementById("Prineville");
+        var prinevilleFunction=function(){
+            cityID1=prinevilleID;
+            weatherBalloon(cityID1);
+        }
+        Prineville.addEventListener("click", prinevilleFunction());
+        var Redmond = document.getElementById("redmond");
+        var redmondFunction=function(){
+            cityID1=redmondID;
+            weatherBalloon(cityID1);
+        }
+        Redmond.addEventListener("click", redmondFunction());
+        var LaPine=document.getElementById("Lapine")
+        var lapineFunction=function(){
+            cityID1=lapineID;
             weatherBalloon(cityID1);
         }
     </script>
