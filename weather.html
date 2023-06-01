@@ -33,6 +33,12 @@
         const prinevilleID = 5746901;
         const redmondID = 5747882;
         const lapineID = 5735549;
+        var cityID1 = bendID;
+        var Sisters = document.getElementById("sisters");
+        var sistersFunction=function(){
+            cityID1 = sistersID;
+        }
+        Sisters.addEventListener("click", sistersFunction());
         const apiKey= '4652a98c9359bbc737bd4e7e8797adfc';
         console.log("working");
         function drawWeather( d ){
@@ -69,7 +75,7 @@
             });
         }
         window.onload = function() {
-            weatherBalloon(bendID);
+            weatherBalloon(cityID1);
         }
     </script>
     <div id="mySidenav" class="sidenav">
