@@ -48,6 +48,12 @@
         var prinevilleFunction=function(){
             cityID1=prinevilleID;
         }
+        Prineville.addEventListener("click", prinevilleFunction());
+        var Redmond = document.getElementById("redmond");
+        var redmondFunction=function(){
+            cityID1=redmondID;
+        }
+        Redmond.addEventListener("click", redmondFunction());
         const apiKey= '4652a98c9359bbc737bd4e7e8797adfc';
         console.log("working");
         function drawWeather( d ){
