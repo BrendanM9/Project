@@ -9,6 +9,7 @@
 #Location_menu{
     position:absolute;
     left:100px;
+    top:100px;
 }    
 #mySidenav a {
   position: absolute; /* Position them relative to the browser window */
