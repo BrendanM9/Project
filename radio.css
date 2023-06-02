@@ -8,118 +8,119 @@
 */
 .iframely-embed{
   position:absolute;
-  left:300px;
-  width:200px;
+  left:500px;
+  width:300px;
+  height:500px;
 } 
 #Location_menu{
-    position:absolute;
-    left:100px;
-    top:100px;
+  position:absolute;
+  left:100px;
+  top:100px;
 }    
 #mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  height:50px;
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+position: absolute; /* Position them relative to the browser window */
+left: -80px; /* Position them outside of the screen */
+transition: 0.3s; /* Add transition on hover */
+padding: 15px; /* 15px padding */
+width: 100px; /* Set a specific width */
+height:50px;
+text-decoration: none; /* Remove underline */
+font-size: 20px; /* Increase font size */
+color: white; /* White text color */
+border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
 
 #mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
+left: 0; /* On mouse-over, make the elements appear as they should */
 }
 
 /* The about link: 20px from the top with a green background */
 #home{
-  top:70px;
-  background-color:#373E99;
+top:70px;
+background-color:#373E99;
 }
 #about {
-  top: 160px;
-  background-color: #E8E9EB;
+top: 160px;
+background-color: #E8E9EB;
 }
 
 #weather {
-  top: 250px;
-  background-color: #0D160B; /* Blue */
+top: 250px;
+background-color: #0D160B; /* Blue */
 }
 
 #request_line {
-  top: 340px;
-  background-color: #FFF225; /* Red */
+top: 340px;
+background-color: #FFF225; /* Red */
 }
 
 #contact {
-  top: 430px;
-  background-color: #F89A21 /* Light Black */
+top: 430px;
+background-color: #F89A21 /* Light Black */
 }
 h1{
-  position:absolute;
-  left:100px;
+position:absolute;
+left:100px;
 }
 #subtitle{
-  position:absolute;
-  left:100px;
+position:absolute;
+left:100px;
 }
 p{
-  padding-left:100px;
+padding-left:100px;
 }
 #request_form{
-  position:absolute;
-  left:100px;
-  top:100px;
-  width:310px;
+position:absolute;
+left:100px;
+top:100px;
+width:310px;
 }
 .request{
-  position:absolute;
-  left:150px;
+position:absolute;
+left:150px;
 }
 .contact{
-  position:absolute;
-  left:150px;
-  width:300px;
+position:absolute;
+left:150px;
+width:300px;
 }
 .comment{
-  position:absolute;
-  left:150px;
-  height:150px;
-  width:300px;
+position:absolute;
+left:150px;
+height:150px;
+width:300px;
 }
 #contact_form{
-  position:absolute;
-  left:100px;
-  top:100px;
-  width:450px;
-  height:325px;
+position:absolute;
+left:100px;
+top:100px;
+width:450px;
+height:325px;
 }
 body{
-  background-color:#7C7A7A;
+background-color:#7C7A7A;
 }
 #weather-table{
-  background-color:#E8E9EB;
-  position:absolute;
-  left:300px;
-  top:100px;
+background-color:#E8E9EB;
+position:absolute;
+left:300px;
+top:150px;
 }
 #location{
-  text-align:center;
+text-align:center;
 }
 #lo{
-  color:blue;
+color:blue;
 }
 #hi{
-  color:red;
+color:red;
 }
 
 button{
-  color:#373E99;
-  background-color:#FFF225;
+color:#373E99;
+background-color:#FFF225;
 }
 .button_link{
-  color:#373E99;
-  text-decoration:none;
+color:#373E99;
+text-decoration:none;
 }
