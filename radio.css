@@ -6,6 +6,9 @@
     Aureolin (FFF225)
     Carrot Orange (F89A21)
 */
+.iframely-embed{
+    width:200px;
+} 
 #Location_menu{
     position:absolute;
     left:100px;
