@@ -7,7 +7,9 @@
     Carrot Orange (F89A21)
 */
 .iframely-embed{
-    width:200px;
+  position:absolute;
+  left:300px;
+  width:200px;
 } 
 #Location_menu{
     position:absolute;
