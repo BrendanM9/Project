@@ -69,21 +69,21 @@
                 // catch any errors
             });
         }
-        window.onload = function() {
+        /*window.onload = function() {
             weatherBalloon(cityID1);
-        }
+        }*/
         var Bend = document.getElementById("bend");
-        var bendFunction=function(){
-            cityID1 = bendID;
-            weatherBalloon(cityID1);
+        var bendFunction=function(cityID){
+            //cityID1 = bendID;
+            weatherBalloon(cityID);
         }
-        Bend.addEventListener("click", bendFunction());
-        var Sisters = document.getElementById("sisters");
-        var sistersFunction=function(){
-            cityID1 = sistersID;
-            weatherBalloon(cityID1);
+        Bend.addEventListener("click", bendFunction(bendID));
+        /*var Sisters = document.getElementById("sisters");
+        var sistersFunction=function(cityID){
+            //cityID1 = sistersID;
+            weatherBalloon(cityID);
         }
-        Sisters.addEventListener("click", sistersFunction());
+        Sisters.addEventListener("click", sistersFunction(sistersID));
         var Prineville = document.getElementById("Prineville");
         var prinevilleFunction=function(){
             cityID1=prinevilleID;
@@ -100,7 +100,7 @@
         var lapineFunction=function(){
             cityID1=lapineID;
             weatherBalloon(cityID1);
-        }
+        }*/
     </script>
     <div id="mySidenav" class="sidenav">
         <br>
