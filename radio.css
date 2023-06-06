@@ -124,3 +124,9 @@ background-color:#FFF225;
 color:#373E99;
 text-decoration:none;
 }
+#content{
+    position:absolute;
+    left:200px;
+    top:200px;
+    width:200px;
+}
