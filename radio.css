@@ -58,6 +58,10 @@ background-color: #FFF225; /* Red */
 top: 430px;
 background-color: #F89A21 /* Light Black */
 }
+#schedule{
+    top:520px;
+    background-color: #373E99;
+} 
 h1{
 position:absolute;
 left:100px;
