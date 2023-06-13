@@ -49,7 +49,6 @@
             var speed= Math.round(parseFloat(d.wind.speed)*0.62137119);
 
             document.getElementById('description').innerHTML = "Description: "+ d.weather[0].description;
-            document.getElementById('icon').innerHTML = d.weather[0].icon;
             document.getElementById('temp').innerHTML = "Current Temperature: " + fahrenheit + '&deg;';
             document.getElementById('location').innerHTML = d.name;
             document.getElementById('realFeel').innerHTML = "Real Feel: "+ heatIndexF + '&deg';
