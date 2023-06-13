@@ -65,10 +65,12 @@ background-color: #F89A21 /* Light Black */
 h1{
 position:absolute;
 left:100px;
+font-family: 'Angkor';
 }
 #subtitle{
 position:absolute;
 left:100px;
+font-family: 'Angkor';
 }
 p{
 padding-left:100px;
