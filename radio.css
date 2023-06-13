@@ -55,20 +55,24 @@ background-color: #E8E9EB;
 }
 
 #weather {
+    position:fixed;
 top: 250px;
 background-color: #0D160B; /* Blue */
 }
 
 #request_line {
+    position:fixed;
 top: 340px;
 background-color: #FFF225; /* Red */
 }
 
 #contact {
+    position:fixed;
 top: 430px;
 background-color: #F89A21 /* Light Black */
 }
 #schedule{
+    position:fixed;
     top:520px;
     background-color: #373E99;
 } 
