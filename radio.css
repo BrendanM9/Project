@@ -44,10 +44,12 @@ left: 0; /* On mouse-over, make the elements appear as they should */
 
 /* The about link: 20px from the top with a green background */
 #home{
+position:fixed;
 top:70px;
 background-color:#373E99;
 }
 #about {
+position:fixed;
 top: 160px;
 background-color: #E8E9EB;
 }
