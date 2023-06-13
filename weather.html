@@ -72,15 +72,15 @@
                 // catch any errors
             });
         }
-        /*window.onload = function() {
+        window.onload = function() {
             weatherBalloon(cityID1);
-        }*/
+        }
         var Bend = document.getElementById("bend");
         var bendFunction=function(cityID){
             //cityID1 = bendID;
             weatherBalloon(cityID);
         }
-        Bend.addEventListener("click", bendFunction(bendID));
+        Bend.addEventListener("click", weatherBalloon(bendID));
         /*var Sisters = document.getElementById("sisters");
         var sistersFunction=function(cityID){
             //cityID1 = sistersID;
