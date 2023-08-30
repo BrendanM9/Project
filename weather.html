@@ -18,17 +18,17 @@
         <br>
         <!--Weather data from openweathermap api. Thanks!-->
         <div id="weather-table">
-        <h4 id='location'></h4>
-        <p id="demo"></p>
-        <p id='description'></p>
-        <p id="temp"></p>
-        <p id="realFeel"></p>
-        <p id="lo"></p>
-        <p id="hi"></p>
-        <p id="humid"></p>
-        <p id="wspeed"></p>
-        <p id="degrees"></p>
-        <p id="cloud"></p>
+        <h4 id='location'>--</h4>
+        <p id="demo">--</p>
+        <p id='description'>--</p>
+        <p id="temp">--</p>
+        <p id="realFeel">--</p>
+        <p id="lo">--</p>
+        <p id="hi">--</p>
+        <p id="humid">--</p>
+        <p id="wspeed">--</p>
+        <p id="degrees">--</p>
+        <p id="cloud">--</p>
     </div>
     <script>
         const bendID = "KORBEND727";
@@ -62,7 +62,7 @@
 
         function weatherBalloon( cityID ){
             var key = apiKey;
-            fetch('https://api.openweathermap.org/data/2.5/weather?id='+cityID+'&appid=' + key)
+            fetch('https://api.weather.com/v2/pws/observations/current?stationId='+cityID+'&format=json&units=e&apiKey='+key)
             .then(function(resp) { return resp.json() }) // Convert data to JSON
             .then(function(data) {
                 drawWeather(data); // Call drawWeather
