@@ -31,13 +31,13 @@
         <p id="cloud"></p>
     </div>
     <script>
-        const bendID = 5713587;
+        const bendID = "KORBEND727";
         const sistersID = 5752129;
         const prinevilleID = 5746901;
         const redmondID = 5747882;
         const lapineID = 5735549;
         var cityID1 = bendID;
-        const apiKey= '4652a98c9359bbc737bd4e7e8797adfc';
+        const apiKey= 'be3a60645b954897ba60645b95f89776';
         console.log("working");
         function drawWeather( d ){
             console.log("Weather data \n", d);
@@ -48,16 +48,16 @@
             var high= Math.round(((parseFloat(d.main.temp_max)-273.15)*1.8)+32);
             var speed= Math.round(parseFloat(d.wind.speed)*0.62137119);
 
-            document.getElementById('description').innerHTML = "Description: "+ d.weather[0].description;
-            document.getElementById('temp').innerHTML = "Current Temperature: " + fahrenheit + '&deg;';
-            document.getElementById('location').innerHTML = d.name;
-            document.getElementById('realFeel').innerHTML = "Real Feel: "+ heatIndexF + '&deg';
-            document.getElementById('lo').innerHTML = "Minimum Temperature So Far: " +low + '&deg';
+            //document.getElementById('description').innerHTML = "Description: "+ d.observations[0].description;
+            document.getElementById('temp').innerHTML = "Temperature: "+d.observations[0].imperial.temp+ '&deg';
+            //document.getElementById('location').innerHTML = d.name;
+            document.getElementById('realFeel').innerHTML = "Real Feel: "+ d.observations[0].imperial.heatIndex + '&deg';
+            document.getElementById('lo').innerHTML = "Minimum Temperature So Far: " + low + '&deg';
             document.getElementById('hi').innerHTML = "Maximum Temperature So Far: " +high + '&deg';
-            document.getElementById('humid').innerHTML = "Humidity: " + d.main.humidity + '%';
-            document.getElementById('wspeed').innerHTML= "Wind Speed: " + speed + " Miles Per Hour";
-            document.getElementById('degrees').innerHTML = "Wind Direction: "+ d.wind.deg + '&deg';
-            document.getElementById("cloud").innerHTML = "Cloud Cover: " + d.clouds.all + '%';
+            document.getElementById('humid').innerHTML = "Humidity: " + d.observations[0].humidity + '%';
+            document.getElementById('wspeed').innerHTML= "Wind Speed: " + d.observations[0].imperial.windSpeed + " Miles Per Hour";
+            document.getElementById('degrees').innerHTML = "Wind Direction: "+ d.observations[0].windDirection + '&deg';
+            //document.getElementById("cloud").innerHTML = "Cloud Cover: " + d.clouds.all + '%';
         }
 
         function weatherBalloon( cityID ){
