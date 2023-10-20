@@ -41,12 +41,12 @@
         console.log("working");
         function drawWeather( d ){
             console.log("Weather data \n", d);
-            var celsius = Math.round(parseFloat(d.main.temp)-273.15);
+            /*var celsius = Math.round(parseFloat(d.main.temp)-273.15);
             var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
             var heatIndexF = Math.round(((parseFloat(d.main.feels_like)-273.15)*1.8)+32);
             var low= Math.round(((parseFloat(d.main.temp_min)-273.15)*1.8)+32);
             var high= Math.round(((parseFloat(d.main.temp_max)-273.15)*1.8)+32);
-            var speed= Math.round(parseFloat(d.wind.speed)*0.62137119);
+            var speed= Math.round(parseFloat(d.wind.speed)*0.62137119);*/
 
             //document.getElementById('description').innerHTML = "Description: "+ d.observations[0].description;
             document.getElementById('temp').innerHTML = "Temperature: "+d.observations[0].imperial.temp+ '&deg';
