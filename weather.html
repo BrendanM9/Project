@@ -52,8 +52,8 @@
             document.getElementById('temp').innerHTML = "Temperature: "+d.observations[0].imperial.temp+ '&deg';
             //document.getElementById('location').innerHTML = d.name;
             document.getElementById('realFeel').innerHTML = "Real Feel: "+ d.observations[0].imperial.heatIndex + '&deg';
-            document.getElementById('lo').innerHTML = "Minimum Temperature So Far: " + low + '&deg';
-            document.getElementById('hi').innerHTML = "Maximum Temperature So Far: " +high + '&deg';
+            //document.getElementById('lo').innerHTML = "Minimum Temperature So Far: " + d.observations[0].imperial.heatIndex + '&deg';
+            //document.getElementById('hi').innerHTML = "Maximum Temperature So Far: " +d.observations[0].imperial.heatIndex + '&deg';
             document.getElementById('humid').innerHTML = "Humidity: " + d.observations[0].humidity + '%';
             document.getElementById('wspeed').innerHTML= "Wind Speed: " + d.observations[0].imperial.windSpeed + " Miles Per Hour";
             document.getElementById('degrees').innerHTML = "Wind Direction: "+ d.observations[0].windDirection + '&deg';
