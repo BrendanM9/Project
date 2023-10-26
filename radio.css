@@ -6,6 +6,11 @@
     Aureolin (FFF225)
     Carrot Orange (F89A21)
 */
+#KQAKTuneIn{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
 h5{
     font-family: 'Angkor';
 }
