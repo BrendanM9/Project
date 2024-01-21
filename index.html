@@ -22,9 +22,10 @@
                 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://prod-3-83-203-156.amperwave.net/horizonbroadcasting-kqakfmmp3-ibc1?session-id=57e2fdc68d8bc1e72ebefd00689043cb" data-iframely-url="//iframely.net/xIvb5CM"></a></div></div><script async src="//iframely.net/embed.js"></script>-->
         <!--Put TuneIn Link here-->
         <!--<iframe src="https://tunein.com/embed/player/s34778/" style="width:35%; height:100px;" scrolling="no" frameborder="no" id="KQAKTuneIn"></iframe>-->
-        <a href="https://tunein.com/embed/player/s34778/" target="_blank" rel="noopener" style="width:35%; height:100px;" scrolling="no" frameborder="no" id="KQAKTuneIn">
-            <img class="live-button" src="https://mco.itmwpb.com/wp-content/themes/mco-theme/images/buttons/listen-live-KQAK.png">
-        </a>
+        <!--<a href="https://tunein.com/embed/player/s34778/" target="_blank" rel="noopener" style="width:35%; height:100px;" scrolling="no" frameborder="no" id="KQAKTuneIn">-->
+            <img class="live-button" src="https://mco.itmwpb.com/wp-content/themes/mco-theme/images/buttons/listen-live-KQAK.png" id="KQAKTuneIn">
+        <!--</a>-->
+        <audio src="https://live.amperwave.net/direct/horizonbroadcasting-kqakfmmp3-ibc1" id="KQAK">
         <!--<a href="https://tunein.com/embed/player/s26339/" target="_blank" rel="noopener" style="width:35%; height:100px;" scrolling="no" frameborder="no" id="KWPKTuneIn">
             <img class="live-button" src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/38/2014/06/06160730/Listen-live-The-Peak-2.png">
         </a>-->
@@ -46,5 +47,12 @@
             <a href="contact.html" id="contact">Contact</a>
             <a href="schedule.html" id="schedule">Our Radio Schedule</a>
           </div>
+            <script>
+                var kqak = document.getElementById("KQAK")
+                var kqakbtn = document.getElementById("KQAKTuneIn")
+                startStream = function(){
+                    kqak.play()
+                }
+            </script>
     </body>
 </html>
