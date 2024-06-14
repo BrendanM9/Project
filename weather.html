@@ -17,7 +17,8 @@
         <!--<div id="Location_menu"><button id="bend">Bend</button><button id="sisters">Sisters</button><button id="Prineville">Prineville</button><button id="redmond">Redmond</button><button id="Lapine">La-Pine</button></div>-->
         <br>
         <!--Weather data from openweathermap api. Thanks!-->
-        <div id="weather-table">
+        <iframe src="https://brendanm9.github.io/Weather/embed.html" title="Bend Forecast" height="100%" width="25%"></iframe>
+        <!--<div id="weather-table">
         <h4 id='location'>--</h4>
         <p id="demo">--</p>
         <p id='description'>--</p>
@@ -29,10 +30,9 @@
         <p id="wspeed">--</p>
         <p id="degrees">--</p>
         <p id="cloud">--</p>
-            <iframe src="https://brendanm9.github.io/Weather/embed.html" title="Bend Forecast" height="100%"></iframe>
-    </div>
+    </div>-->
     <script>
-        const bendID = "KORBEND727";
+        /*const bendID = "KORBEND727";
         const sistersID = 5752129;
         const prinevilleID = 5746901;
         const redmondID = 5747882;
@@ -50,7 +50,7 @@
             var speed= Math.round(parseFloat(d.wind.speed)*0.62137119);*/
 
             //document.getElementById('description').innerHTML = "Description: "+ d.observations[0].description;
-            document.getElementById('temp').innerHTML = "Temperature: "+d.observations[0].imperial.temp+ '&deg';
+           /* document.getElementById('temp').innerHTML = "Temperature: "+d.observations[0].imperial.temp+ '&deg';
             //document.getElementById('location').innerHTML = d.name;
             document.getElementById('realFeel').innerHTML = "Real Feel: "+ d.observations[0].imperial.heatIndex + '&deg';
             //document.getElementById('lo').innerHTML = "Minimum Temperature So Far: " + d.observations[0].imperial.heatIndex + '&deg';
