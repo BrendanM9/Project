@@ -190,3 +190,8 @@ dclemensarea{
 sergioarea{
     background-color:#E8E9EB;
 }
+iframe{
+    transform: scale(0.294167) !important; transform-origin: 0px 0px;
+    frameborder="0"; 
+    scrolling="no";
+}
