@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="radio.css">
+  <link rel="icon" type="image/x-icon" href="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1950/2020/10/12160146/station-150x150.png">
+  <title>KQAK Schedule</title>
+  <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+  <meta charset="utf-8">
+</head>
+<body>
+  <!--All images presented are from https://www.kqak.com/show/.-->
+  <h1>Our Broadcast Schedule</h1>
+  <br>
+  <br>
+  <h3 id="subtitle">We play all of your favorite songs from the 70's, 80's, & 90's.</h3>
+  <br>
+  <br>
+  <div id="KQAK-schedule">
+  <ol>
+    <div id="bmedinaarea"><li><img src="bmedina.png"> id="bmedina"></li><h5>Medina In The Morning</h5><h6>Monday 5:00AM-6:00AM</h6></div>
+    <div id="dclemensarea"><li><img src="dclemens.png" id="dclemens"></li><h5>The Dave Clemens Experience</h5><h6>Monday-Saturday, 6:00AM-10:00AM</h6></div>
+    <div id="sergioarea"><li><img src="sergio.png" id="sergio"><h5>Sergio</h5><h6>Monday-Saturday, 10:00AM-3:00PM</h6></li></div>
+    <div id="jimboarea"><li><img src="jimbo.png" id="jimbo"><h5>Roundabout Radio with Jimbo</h5><h6>Monday-Saturday, 3:00PM-7:00PM</h6></li></div>
+    <div id="tkentarea"><li><img src="tkent.png" id="tkent"><h5>The Ultimate Party with Tom Kent</h5><h6>Saturday, 7:00PM-12:00AM</h6></li></div>
+    <div id="ckasemarea"><li><img src="ckasem.png" id="ckasem"><h5>American Top 40...The 80's with Casey Kasem</h5><h6>Sunday, 8:00AM-12:00PM</h6></li></div>
+    <div id="absolutely80sarea"><li><img src="absolutely80s.png" id="absolutely80s"><h5>Absolutely 80's with Nina Blackwood</h5><h6>Sunday, 6:00PM-9:00PM</h6></li></div>
+  </ol>
+  </div>
+  <!--<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 0;"><a href="https://prod-54-224-203-182.wostreaming.net/horizonbroadcasting-kqakfmmp3-ibc1?session-id=53a5fd52e09b5f94a7bfc0467742ce00" data-iframely-url="//iframely.net/DMq2uxQ"></a><p>KQAK-FM Live Stream</div></div><script async src="//iframely.net/embed.js"></script>-->
+  <div id="mySidenav" class="sidenav">
+            <br>
+            <br>
+            <a href="index.html" id="home">Home</a>
+            <a href="about.html" id="about">About</a>
+            <a href="weather.html" id="weather">Weather</a>
+            <a href="request.html" id="request_line">Song Request</a>
+            <a href="contact.html" id="contact">Contact</a>
+            <a href="schedule.html" id="schedule">Our Radio Schedule</a>
+          </div>
+</html>
